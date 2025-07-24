@@ -1,106 +1,270 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vladimir Díaz Contreras - Portafolio</title>
-  <link rel="stylesheet" href="./style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vladimir Díaz Contreras - Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
+    <div class="cursor"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Vladimir Diaz Contreras</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Inicio</a></li>
+                <li><a href="#about" class="nav-link">Acerca</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Proyectos</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </nav>
-  </header>
 
-  <section id="inicio" class="hero">
-    <div class="hero-text">
-      <h1>Vladimir Díaz Contreras</h1>
-      <p>Desarrollador de Software Full Stack</p>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="hero-greeting">Hola, soy</span>
+                    <span class="hero-name">Vladimir Díaz Contreras</span>
+                </h1>
+                <p class="hero-subtitle">Desarrollador de Software Full Stack</p>
+                <p class="hero-description">
+                    Creando soluciones innovadoras con JavaScript, Python y tecnologías modernas
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+                    <a href="#contact" class="btn btn-secondary">Contactar</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="../storage/image (3).png" alt="Vladimir Díaz Contreras" class="profile-img">
+                    <div class="image-bg"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
 
-  <section id="sobre-mi" class="card">
-    <div class="content">
-      <img src="./storage/image (3).png" alt="Avatar Vladimir" class="avatar">
-      <div>
-        <h2>Sobre mí</h2>
-        <p>Desarrollador de software con experiencia en la creación de soluciones web utilizando JavaScript, HTML, CSS y Python. Ha participado en proyectos orientados al desarrollo de interfaces dinámicas y sistemas funcionales. Posee conocimientos en buenas prácticas de codificación, control de versiones con Git y metodologías ágiles. Se destaca por su enfoque en la calidad del código y la eficiencia en el desarrollo. Apasionado por la tecnología y la mejora continua. Aspira a desempeñarse como desarrollador full stack junior.</p>
-      </div>
-    </div>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre mí</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Desarrollador de software con experiencia en la creación de soluciones utilizando JavaScript, HTML, CSS y Python. Ha participado en proyectos orientados al desarrollo de interfaces dinámicas y sistemas funcionales.
+                    </p>
+                    <p>
+                        Posee conocimientos en buenas prácticas de codificación, control de versiones con Git y metodologías ágiles. Se destaca por su enfoque en la calidad del código y la eficiencia en el desarrollo.
+                    </p>
+                    <p>
+                        Apasionado por la tecnología y la mejora continua. Aspira a desempeñarse como desarrollador full stack junior.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3>5+</h3>
+                        <p>Proyectos Completados</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>6+</h3>
+                        <p>Meses de Experiencia</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>100%</h3>
+                        <p>Dedicación</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="habilidades" class="card">
-    <h2>Habilidades</h2>
-    <div class="skills">
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
-        <span>JavaScript</span>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
-        <span>HTML5</span>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
-        <span>CSS3</span>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
-        <span>Node.js</span>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
-        <span>Python</span>
-      </div>
-    </div>
-  </section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Habilidades Técnicas</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>Desarrollo frontend y backend con ES6+</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                    </div>
+                    <h3>HTML5</h3>
+                    <p>Estructura semántica y accesible</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                    </div>
+                    <h3>CSS3</h3>
+                    <p>Diseño responsive y animaciones</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                    </div>
+                    <h3>Node.js</h3>
+                    <p>Desarrollo de APIs y servidores</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                    </div>
+                    <h3>Python</h3>
+                    <p>Automatización y desarrollo backend</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="proyectos" class="card">
-    <h2>Proyectos</h2>
-    <div class="project-list">
-      <div class="project-row">
-        <span class="project-name">
-          <a href="https://github.com/VladimirDiazContreras/JavaScript_S1_DiazVladimir/tree/main/dia15" target="_blank">PacoPets:</a>
-        </span>
-        <span class="project-desc">Plataforma de adopción de mascotas</span>
-      </div>
-      <div class="project-row">
-        <span class="project-name">
-          <a href="https://github.com/VladimirDiazContreras/JavaScript_S1_DiazVladimir/tree/main/dia6" target="_blank">Blackjack online:</a>
-        </span>
-        <span class="project-desc">Implementacion de unjuego de blackJack</span>
-      </div>
-      <div class="project-row">
-        <span class="project-name">
-          <a href="https://github.com/VladimirDiazContreras/diagnostico_MongoDB_I_DiazVladimir" target="_blank">MongoDB Experiments:</a>
-        </span>
-        <span class="project-desc">Experimentación con base de datos</span>
-      </div>
-    </div>
-  </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Proyectos Destacados</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./storage/pacopet.png" alt="PacoPets">
+                        <div class="project-overlay">
+                            <a href="https://vladimirdiazcontreras.github.io/JavaScript_S1_DiazVladimir/dia15/" target="_blank" class="project-link">Ver Proyecto</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>PacoPets</h3>
+                        <p>Plataforma de adopción de mascotas desarrollada con JavaScript vanilla, HTML5 y CSS3. Incluye sistema de búsqueda y filtros avanzados.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./storage/casino.png" alt="Blackjack Online">
+                        <div class="project-overlay">
+                            <a href="https://vladimirdiazcontreras.github.io/JavaScript_S1_DiazVladimir/dia6/" target="_blank" class="project-link">Ver Proyecto</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Blackjack Online</h3>
+                        <p>Implementación completa del juego de Blackjack con lógica de juego avanzada, interfaz intuitiva y sistema de puntuación.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>DOM</span>
+                            <span>CSS3</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=200&width=350" alt="MongoDB Experiments">
+                        <div class="project-overlay">
+                            <a href="https://github.com/VladimirDiazContreras/diagnostico_MongoDB_I_DiazVladimir" target="_blank" class="project-link">Ver Proyecto</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>MongoDB Experiments</h3>
+                        <p>Experimentación avanzada con bases de datos NoSQL, incluyendo operaciones CRUD, agregaciones y optimización de consultas.</p>
+                        <div class="project-tech">
+                            <span>MongoDB</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="contacto" class="card">
-    <h2>Contacto</h2>
-    <ul class="contact-info">
-      <li><strong>Email:</strong> <a href="mailto:vladimir@email.com">vladimir@email.com</a></li>
-      <li><strong>Teléfono:</strong> <a href="tel:+573001112233">+57 300 111 2233</a></li>
-      <li><strong>GitHub:</strong> <a href="https://github.com/vladidiaz" target="_blank">github.com/vladidiaz</a></li>
-    </ul>
-  </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Conectemos</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:diazc04080910@gmail.com">diazc04080910@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h3>Teléfono</h3>
+                            <a href="tel:+573001112233">+57 310 464 2550</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💻</div>
+                        <div class="contact-details">
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/VladimirDiazContreras" target="_blank">github.com/vladimirdiaz</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Tu email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>© 2025 Vladimir Díaz Contreras</p>
-  </footer>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Vladimir Díaz Contreras.</p>
+        </div>
+    </footer>
 
-  <script src="./script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
-
-
