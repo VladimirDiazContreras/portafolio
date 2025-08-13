@@ -510,16 +510,19 @@ section {
 
 /* Contact Section */
 .contact-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  display: flex;
+  justify-content: center;   /* centra horizontalmente todo el bloque */
+  align-items: center;       /* centra verticalmente el contenido dentro */
+  gap: 2rem;
+  /* elimina esta línea si aún la tienes */
+  /* left: 25%; */
 }
 
 .contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  width: min(720px, 100%);   /* limita el ancho y permite centrado visual */
+  margin-inline: auto;       /* asegura centrado dentro del contenedor */
 }
+
 
 .contact-item {
   display: flex;
